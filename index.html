@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e0e0e0; /* gris */
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(66, 66, 66, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      max-width: 95vw;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .cv-image {
+      max-width: 600px;
+      max-height: 800px;
+      border-radius: 8px;
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .download-btn {
+      padding: 12px 20px;
+      background: #c9c9c933;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #fff;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 16px;
+      }
+
+      .cv-image {
+        max-width: 90vw;
+        max-height: 70vh;
+      }
+
+      .download-btn {
+        width: fit-content;
+      }
+    }
+
+    .cv-image {
+      max-width: 600px;
+      max-height: 800px;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+
+    .download-btn {
+      padding: 12px 20px;
+      background: #c9c9c933;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #fff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Aquí va tu imagen del CV -->
+    <img src="CV PROFESIONAL.jpg" alt="Mi CV" class="cv-image">
+
+    <!-- Botón para descargar PDF -->
+    <a href="CV PROFESIONAL.pdf" class="download-btn" download>Descargar PDF</a>
+  </div>
+</body>
+</html>
